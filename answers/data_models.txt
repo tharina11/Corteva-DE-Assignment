@@ -20,20 +20,19 @@ CREATE TABLE IF NOT EXISTS weather_data
 
 CREATE TABLE IF NOT EXISTS average_temperatures
                (
+                yearstation_id VARCHAR(50),
                 year INT,
-	     station_id VARCHAR(255),
+                station_id VARCHAR(50),
                 avg_max_temperature FLOAT,
-                avg_min_temperature FLOAT,
-                precipitation INT, 
+                avg_min_temperature FLOAT
                 );
 
 — accumulate_precipitation table
 
 CREATE TABLE IF NOT EXISTS accumulate_precipitation
                (
+                yearstation_id VARCHAR(50),
                 year INT,
-	     station_id VARCHAR(255),
-                avg_max_temperature FLOAT,
-                avg_min_temperature FLOAT,
-                precipitation INT, 
+                station_id VARCHAR(50),
+                accumulate_precipitation FLOAT
                 );
