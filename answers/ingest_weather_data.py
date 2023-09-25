@@ -34,7 +34,7 @@ records = weather_stations.to_records(index=True)
 
 # Define username and password of the Posgresql database (use your password)
 username = 'tharinduabeysinghe'
-password = '12345'
+password = '#####'
 
 #Create weather database
 conn = psycopg2.connect(
