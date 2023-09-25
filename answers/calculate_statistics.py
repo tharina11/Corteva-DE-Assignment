@@ -43,7 +43,7 @@ precipitation_records = precipitation_accumulation.to_records(index=True)
 
 # Define username and password of the Posgresql database (use your password)
 username = 'tharinduabeysinghe'
-password = '12345'
+password = '#####'
 
 # Create average_temperatures table in the weather database
 conn = psycopg2.connect(
