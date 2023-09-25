@@ -1,0 +1,39 @@
+— Data Models
+
+— weather_data table
+
+CREATE TABLE IF NOT EXISTS weather_data
+               (
+                date DATE,
+                max_temperature INT,
+                min_temperature INT,
+                precipitation INT,
+                station_id VARCHAR(255),
+                datelocation_id VARCHAR(255) 
+                );
+
+
+
+— STATISTICS
+
+— average_temperatures table
+
+CREATE TABLE IF NOT EXISTS average_temperatures
+               (
+                year INT,
+	     station_id VARCHAR(255),
+                avg_max_temperature FLOAT,
+                avg_min_temperature FLOAT,
+                precipitation INT, 
+                );
+
+— accumulate_precipitation table
+
+CREATE TABLE IF NOT EXISTS accumulate_precipitation
+               (
+                year INT,
+	     station_id VARCHAR(255),
+                avg_max_temperature FLOAT,
+                avg_min_temperature FLOAT,
+                precipitation INT, 
+                );
